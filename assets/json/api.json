@@ -1,0 +1,50 @@
+[
+    {
+      "precio": 0.65,
+      "id": 1,
+      "title": "Apple",
+      "thumbnailUrl": "assets/img/apple.png"
+    },
+    {
+      "precio": 0.55,
+      "id": 2,
+      "title": "Pear",
+      "thumbnailUrl": "assets/img/pear.png"
+    },
+    {
+      "precio": 0.75,
+      "id": 3,
+      "title": "Orange",
+      "thumbnailUrl": "assets/img/orange.png"
+    },
+    {
+      "precio": 3.22,
+      "id": 6,
+      "title": "Mango",
+      "thumbnailUrl": "assets/img/mango.png"
+    },
+    {
+      "precio": 0.85,
+      "id": 4,
+      "title": "Peach",
+      "thumbnailUrl": "assets/img/peach.png"
+    },
+    {
+      "precio": 1.23,
+      "id": 5,
+      "title": "Lemon",
+      "thumbnailUrl": "assets/img/lemon.png"
+    },
+    {
+      "precio": 6.48,
+      "id": 5,
+      "title": "Pinapple",
+      "thumbnailUrl": "assets/img/pinapple.png"
+    },
+    {
+      "precio": 7.5,
+      "id": 6,
+      "title": "Watermelon",
+      "thumbnailUrl": "assets/img/watermelon.png"
+    }
+  ]
