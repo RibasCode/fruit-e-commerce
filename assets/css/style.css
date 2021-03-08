@@ -93,7 +93,9 @@ hr{
     font-weight: 500;
 }
 
-
+.btn-danger{
+    padding: 10px 20px;
+}
 
 #buy-btn{
     height: 75px;
@@ -106,10 +108,10 @@ hr{
 
 
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 20px 35px rgba(45, 45, 54, .4),
-    0px 20px 35px rgba(0, 0, 0, .2);
+    box-shadow: 0px 20px 35px rgba(45, 45, 54, .2),
+    0px 20px 35px rgba(0, 0, 0, .1);
 
-    border: none;
+    border: rgb(225, 225, 225) solid 1px;
     border-radius: 50%;
 
     outline:none;
@@ -123,17 +125,16 @@ hr{
 }
 
 #buy-btn:hover{
-    bottom: 5px;
+    bottom: 6px;
 
-
-    box-shadow: 0px 30px 37px rgba(45, 45, 54, .25),
-    0px 25px 37px rgba(0, 0, 0, .2);
+    box-shadow: 0px 30px 37px rgba(45, 45, 54, .1),
+    0px 25px 37px rgba(0, 0, 0, .05);
 
     transition: all 0.3s ease;
 }
 
 #buy-btn img{
-    height: 42px;
+    height: 36px;
 
     margin-top: 5px;
     margin-left: 5px;
@@ -253,12 +254,11 @@ td{
 
 .btn-purchase{
     font-weight: 600;
-    color: #000;
-    background-color: rgb(0, 255, 0);
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border: none;
-    width: 50%;
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 .btn-purchase:hover{
@@ -279,18 +279,20 @@ td{
 #cantidad-cesta{
     position: absolute;
     text-align: center;
-    background-color: rgb(255, 0, 55);
-    height: 25px;
-    width: 25px;
+    background-color: rgb(240, 0, 0);
+    height: 23px;
+    width: 23px;
+    
     border-radius: 50px;
     color: #fff;
     right: 50%;
     font-weight: 600;
     padding-top: 3.3px;
-    margin-left: 50px;
-    font-size: 12px;
+    padding-left: 1px;
+
+    font-size: 10px;
     transform: translate(-50%, -50%);
-    right: 15%;
+    margin-right: -23px;
     top: 99%;
     opacity: 0;
 
