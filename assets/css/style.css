@@ -156,6 +156,8 @@ hr{
 
 .table>:not(:last-child)>:last-child>* {
     border-bottom-color: rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -163,16 +165,22 @@ hr{
 .btn-resta img{
     height: 12px;
     pointer-events: none;
-
-
     background-color: rgba(255, 255, 255, 1);
-
-
 }
 
 th,
 td{
     text-align: center;
+}
+
+.table td,
+.table th{
+    vertical-align: middle;
+}
+
+#footer td,
+#footer th{
+    font-size: 18px;
 }
 
 
@@ -306,7 +314,7 @@ td{
 #footer {
     color: #fff;
     font-size: 14px;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+    background: #212529;
     background-size: cover;
   }
 
