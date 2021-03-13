@@ -148,9 +148,9 @@ const pintarCarrito = () => {
 const pintarFooter = () => {
     footer.innerHTML = ''
     if(Object.keys(carrito).length === 0){
-        // footer.innerHTML = `
-        // <th scope="row" colspan="5" style="font-size: 22px;">Your cart is empty</th>
-        // `
+        footer.innerHTML = `
+        <th scope="row" colspan="5" style="font-size: 22px;">Your cart is empty</th>
+        `
         document.getElementById('total-final').innerHTML = '0'
         document.getElementById('cantidad-cesta').innerHTML = '0'
         // aquest return fa que surti de tota aquest afunció pintarFooter()
