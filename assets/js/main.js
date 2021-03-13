@@ -127,7 +127,9 @@ const pintarCarrito = () => {
         templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
         templateCarrito.querySelector('.btn-suma').dataset.id = producto.id
         templateCarrito.querySelector('.btn-resta').dataset.id = producto.id
-        templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
+        // cuidado amb la chapuza
+        templateCarrito.querySelector('span').textContent = (producto.cantidad * producto.precio).toFixed(2)
+        
     
         const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone)
@@ -157,7 +159,8 @@ const pintarFooter = () => {
     // 5 - per sumar totes les quantitats i els preus entre ells fem servi el reduce
     // reduce() recorrem cada un dels elements de la coleció de objectes, tenim un acomulador i necesitem accedir a la quantitat i al preu així que li pasem els parametres, el acomulador anira acomulant per cada iteració la suma i la sumara amb la anterior que hagi fet
     const nCantidad = Object.values(carrito).reduce((accumulador, {cantidad}) => accumulador + cantidad,0)
-    const nPrecio = Object.values(carrito).reduce((accumulador, {cantidad, precio}) => accumulador + cantidad * precio,0)
+    // toFixed(2) arrodoneix a 2 decimals
+    const nPrecio = Object.values(carrito).reduce((accumulador, {cantidad, precio}) => accumulador + cantidad * precio,0).toFixed(2)
     // console.log(nPrecio)
 
     // pinntem la suma del acomulador a la taula
